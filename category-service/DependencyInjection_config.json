@@ -1,0 +1,17 @@
+{
+    "kernel": {
+        "loadServices": [
+            "Service\\Abst",
+            "Service\\Concrete",
+            "Service\\Gateway",
+            "Data\\Repository\\Concrete",
+            "Data\\Repository\\Abst",
+            "App\\Controller"
+        ],
+        "services": {
+            "Data\\Repository\\Abst\\ICategoryRepo":"Data\\Repository\\Concrete\\CategoryRepo",
+            "Service\\Abst\\ICategoryService":"Service\\Concrete\\CategoryService",
+            "Service\\Gateway\\IReceiverService":"Service\\Gateway\\ReceiverService"
+        }
+    }
+}

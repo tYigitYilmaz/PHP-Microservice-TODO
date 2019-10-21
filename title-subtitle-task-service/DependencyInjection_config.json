@@ -1,0 +1,21 @@
+{
+    "kernel": {
+        "loadServices": [
+            "Service\\Abst",
+            "Service\\Concrete",
+            "Service\\Gateway",
+            "Data\\Repository\\Concrete",
+            "Data\\Repository\\Abst",
+            "App\\Controller"
+        ],
+        "services": {
+            "Data\\Repository\\Abst\\ITitleRepo":"Data\\Repository\\Concrete\\TitleRepo",
+            "Service\\Abst\\ITitleService":"Service\\Concrete\\TitleService",
+            "Data\\Repository\\Abst\\ISubtitleRepo":"Data\\Repository\\Concrete\\SubtitleRepo",
+            "Service\\Abst\\ISubtitleService":"Service\\Concrete\\SubtitleService",
+            "Data\\Repository\\Abst\\ITaskRepo":"Data\\Repository\\Concrete\\TaskRepo",
+            "Service\\Abst\\ITaskService":"Service\\Concrete\\TaskService",
+            "Service\\Gateway\\IReceiverService":"Service\\Gateway\\ReceiverService"
+        }
+    }
+}

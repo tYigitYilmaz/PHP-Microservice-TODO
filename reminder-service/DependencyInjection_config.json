@@ -1,0 +1,17 @@
+{
+    "kernel": {
+        "loadServices": [
+            "Service\\Abst",
+            "Service\\Concrete",
+            "Service\\Gateway",
+            "Data\\Repository\\Concrete",
+            "Data\\Repository\\Abst",
+            "App\\Controller"
+        ],
+        "services": {
+            "Data\\Repository\\Abst\\IReminderRepo":"Data\\Repository\\Concrete\\ReminderRepo",
+            "Service\\Abst\\IReminderService":"Service\\Concrete\\ReminderService",
+            "Service\\Gateway\\IReceiverService":"Service\\Gateway\\ReceiverService"
+        }
+    }
+}
